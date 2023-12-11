@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* CSS Reset */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Sora', sans-serif;
+}
+
+.container {
+        max-width: 1200px;
+        width: 90%;
+        margin: 30px auto;
+}
+
+h2 {
+        text-align: center;
+        font-weight: normal;
+}
+
+/* Accordion CSS goes here */
+.accordion__wrapper {
+        /* border: 1px solid rgb(242, 249, 255); */
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 8px 16px 0 rgba(242, 249, 255, 1);
+}
+
+/* Accordion Item */
+.accordion__item {
+        background: rgb(242, 249, 255);
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px 0;
+}
+
+/* Question Item */
+.accordion__item h3 {
+        background-color: rgb(220, 237, 255);
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        line-height: 1.5rem;
+}
+.accordion__item h3:hover {
+        background-color: rgb(200, 227, 255);
+}
+
+/* Answer Item */
+.accordion__item p {
+        background-color: rgb(220, 231, 241);
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        line-height: 1.5rem;
+        display: none;
+
+}
+
+/* open accordion item */
+.open {
+        display: block !important;
+}
+
